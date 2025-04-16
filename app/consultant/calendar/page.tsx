@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ConsultantLayout } from "@/components/consultant/layout"
+import { Layout } from "@/components/consultant/layout"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Calendar } from "@/components/ui/calendar"
@@ -57,7 +57,7 @@ export default function ConsultantCalendarPage() {
   )
 
   return (
-    <ConsultantLayout>
+    <Layout>
       <div className="space-y-8">
         <div className="flex items-center justify-between">
           <div>
