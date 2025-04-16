@@ -1,4 +1,5 @@
 "use client"
+import { parseSchemaFromZip } from '../lib/parseZip'
 
 import type React from "react"
 
@@ -28,45 +29,57 @@ export function FileUpload() {
     }
   }
 
-  import { parseSchemaFromZip } from '@/lib/parseZip'
+  
 
-const handleUpload = async () => {
-  if (!file) return alert("Please select a file.")
-
-  setUploading(true)
-  setError(null)
-
-  try {
-    const fileName = `${Date.now()}_${file.name}`
-    const { error: uploadError } = await supabase.storage.from('projects').upload(fileName, file)
-    if (uploadError) throw new Error(uploadError.message)
-
-    const fileUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/projects/${fileName}`
-
-    // 🔍 Parse the ZIP for schema.sql
-    const schemaResult = await parseSchemaFromZip(file)
-
-    // 💾 Save to Supabase
-    const { data: projectData, error: dbError } = await supabase.from('projects').insert([{
-      file_name: fileName,
-      file_url: fileUrl,
-      description,
-      schema_found: schemaResult.found,
-      schema_content: schemaResult.content,
-      checkpoint: { stage: 'schema_checked' },
-    }]).select()
-
-    if (dbError) throw new Error(dbError.message)
-
-    // ✅ Redirect or show success
-    window.location.href = `/projects/${projectData[0].id}`
-  } catch (err) {
-    console.error("Upload error:", err)
-    setError("Failed to upload project. Please try again.")
-  } finally {
-    setUploading(false)
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+  
+    if (!file) {
+      setError("Please select a ZIP file")
+      return
+    }
+  
+    if (!description) {
+      setError("Please provide a system description")
+      return
+    }
+  
+    setUploading(true)
+    setError(null)
+  
+    try {
+      const fileName = `${Date.now()}-${file.name}`
+      const { data: fileData, error: fileError } = await supabase.storage.from("v0-projects").upload(fileName, file)
+      if (fileError) throw fileError
+  
+      const schemaResult = await parseSchemaFromZip(file)
+  
+      const { data: projectData, error: projectError } = await supabase
+        .from("projects")
+        .insert([
+          {
+            name: file.name.replace(".zip", ""),
+            description,
+            file_path: fileName,
+            status: "uploaded",
+            schema_found: schemaResult.found,
+            schema_content: schemaResult.content,
+            checkpoint: { stage: "schema_checked" },
+          },
+        ])
+        .select()
+  
+      if (projectError) throw projectError
+  
+      window.location.href = `/projects/${projectData[0].id}`
+    } catch (err) {
+      console.error("Upload error:", err)
+      setError("Failed to upload project. Please try again.")
+    } finally {
+      setUploading(false)
+    }
   }
-}
+  
 
 
   return (
