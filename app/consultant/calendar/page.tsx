@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Layout } from "@/components/consultant/layout"
+import Layout from '@/components/consultant/layout'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Calendar } from "@/components/ui/calendar"
