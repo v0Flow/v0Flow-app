@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/navbar"
+import ConsultantLayout from '@/components/consultant/layout'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { MapPin, Calendar, Clock } from "lucide-react"
