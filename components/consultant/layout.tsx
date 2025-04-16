@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react"
-import { ConsultantLayout } from '@/components/consultant/layout'
 import { addDays, format } from "date-fns"
 import { Calendar } from "@/components/ui/calendar"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
