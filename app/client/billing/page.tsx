@@ -44,18 +44,18 @@ export default function BillingPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Billing</h1>
-          <p className="text-muted-foreground">Manage your payments and billing information</p>
+          <p className="text-[#2dd4bf]">Manage your payments and billing information</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Outstanding Balance</CardTitle>
-              <CreditCard className="h-4 w-4 text-muted-foreground" />
+              <CreditCard className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">$1,999.00</div>
-              <p className="text-xs text-muted-foreground">Due on May 1, 2025</p>
+              <p className="text-xs text-[#2dd4bf]">Due on May 1, 2025</p>
             </CardContent>
             <CardFooter>
               <Button className="w-full" onClick={handlePayment} disabled={loading}>
@@ -66,7 +66,7 @@ export default function BillingPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Payment Methods</CardTitle>
-              <CreditCard className="h-4 w-4 text-muted-foreground" />
+              <CreditCard className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
@@ -77,7 +77,7 @@ export default function BillingPage() {
                     </div>
                     <div>
                       <p className="text-sm font-medium">•••• •••• •••• 4242</p>
-                      <p className="text-xs text-muted-foreground">Expires 04/26</p>
+                      <p className="text-xs text-[#2dd4bf]">Expires 04/26</p>
                     </div>
                   </div>
                   <Badge>Default</Badge>
@@ -96,14 +96,14 @@ export default function BillingPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Billing Information</CardTitle>
-              <Receipt className="h-4 w-4 text-muted-foreground" />
+              <Receipt className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="space-y-1">
                 <p className="text-sm font-medium">Acme Inc.</p>
-                <p className="text-xs text-muted-foreground">John Doe</p>
-                <p className="text-xs text-muted-foreground">123 Main St, Suite 100</p>
-                <p className="text-xs text-muted-foreground">Nairobi, Kenya</p>
+                <p className="text-xs text-[#2dd4bf]">John Doe</p>
+                <p className="text-xs text-[#2dd4bf]">123 Main St, Suite 100</p>
+                <p className="text-xs text-[#2dd4bf]">Nairobi, Kenya</p>
               </div>
             </CardContent>
             <CardFooter>
@@ -243,7 +243,7 @@ export default function BillingPage() {
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <h3 className="font-medium">Premium Plan</h3>
-                      <p className="text-sm text-muted-foreground">$1,999.00 per project</p>
+                      <p className="text-sm text-[#2dd4bf]">$1,999.00 per project</p>
                       <div className="mt-2 flex items-center gap-2">
                         <Badge variant="outline" className="flex items-center gap-1">
                           <Calendar className="h-3 w-3" />
@@ -262,7 +262,7 @@ export default function BillingPage() {
                     </div>
                     <div>
                       <p className="text-sm font-medium">•••• •••• •••• 4242</p>
-                      <p className="text-xs text-muted-foreground">Expires 04/26</p>
+                      <p className="text-xs text-[#2dd4bf]">Expires 04/26</p>
                     </div>
                     <Button variant="outline" size="sm" className="ml-auto">
                       Update

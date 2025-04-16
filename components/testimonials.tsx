@@ -89,7 +89,7 @@ export function Testimonials() {
                     </Avatar>
                     <div>
                       <p className="font-medium">{testimonial.author}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                      <p className="text-sm text-[#2dd4bf]">{testimonial.role}</p>
                     </div>
                     <div className="ml-auto">
                       <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">

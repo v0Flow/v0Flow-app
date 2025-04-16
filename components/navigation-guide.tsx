@@ -21,7 +21,7 @@ export function NavigationGuide() {
           <TabsContent value="admin" className="space-y-4 pt-4">
             <div className="space-y-2">
               <h3 className="font-medium">Admin Dashboard</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[#2dd4bf]">
                 The admin dashboard provides a complete overview of all platform activities, including projects,
                 clients, consultants, and more.
               </p>
@@ -50,7 +50,7 @@ export function NavigationGuide() {
             </div>
             <div className="space-y-2">
               <h3 className="font-medium">How to Access</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[#2dd4bf]">
                 Admin access is restricted to authorized personnel. If you have admin credentials, you can access the
                 admin dashboard at:
               </p>
@@ -65,7 +65,7 @@ export function NavigationGuide() {
           <TabsContent value="client" className="space-y-4 pt-4">
             <div className="space-y-2">
               <h3 className="font-medium">Client Dashboard</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[#2dd4bf]">
                 The client dashboard allows you to track your projects, view progress, approve changes, and communicate
                 with consultants.
               </p>
@@ -90,11 +90,11 @@ export function NavigationGuide() {
             </div>
             <div className="space-y-2">
               <h3 className="font-medium">Project Progress Tracking</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[#2dd4bf]">
                 To track your project's progress, navigate to "My Projects" in the client dashboard, then select a
                 specific project to view its detailed status, including:
               </p>
-              <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+              <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                 <li>Current stage in the deployment pipeline</li>
                 <li>Database schema generation</li>
                 <li>GitHub code repository status</li>
@@ -112,7 +112,7 @@ export function NavigationGuide() {
           <TabsContent value="consultant" className="space-y-4 pt-4">
             <div className="space-y-2">
               <h3 className="font-medium">Consultant Dashboard</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[#2dd4bf]">
                 The consultant dashboard allows you to manage client projects, schedule strategy sessions, and track
                 your earnings.
               </p>
@@ -137,7 +137,7 @@ export function NavigationGuide() {
             </div>
             <div className="space-y-2">
               <h3 className="font-medium">How to Access</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-[#2dd4bf]">
                 If you're a registered consultant, you can access your dashboard at:
               </p>
               <Button asChild variant="outline" className="mt-2">

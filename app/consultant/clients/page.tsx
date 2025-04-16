@@ -13,12 +13,12 @@ export default function ClientsPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Clients</h1>
-          <p className="text-muted-foreground">Manage your client relationships</p>
+          <p className="text-[#2dd4bf]">Manage your client relationships</p>
         </div>
 
         <div className="flex items-center gap-4">
           <div className="relative flex-1">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-[#2dd4bf]" />
             <Input type="search" placeholder="Search clients..." className="w-full rounded-lg bg-background pl-8" />
           </div>
         </div>
@@ -44,15 +44,15 @@ export default function ClientsPage() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Email</span>
+                    <span className="text-[#2dd4bf]">Email</span>
                     <span>john.doe@example.com</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Projects</span>
+                    <span className="text-[#2dd4bf]">Projects</span>
                     <span>3</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Last Activity</span>
+                    <span className="text-[#2dd4bf]">Last Activity</span>
                     <span>Today</span>
                   </div>
                 </div>
@@ -93,15 +93,15 @@ export default function ClientsPage() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Email</span>
+                    <span className="text-[#2dd4bf]">Email</span>
                     <span>jane.smith@example.com</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Projects</span>
+                    <span className="text-[#2dd4bf]">Projects</span>
                     <span>2</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Last Activity</span>
+                    <span className="text-[#2dd4bf]">Last Activity</span>
                     <span>Yesterday</span>
                   </div>
                 </div>
@@ -142,15 +142,15 @@ export default function ClientsPage() {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Email</span>
+                    <span className="text-[#2dd4bf]">Email</span>
                     <span>robert.johnson@example.com</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Projects</span>
+                    <span className="text-[#2dd4bf]">Projects</span>
                     <span>1</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Last Activity</span>
+                    <span className="text-[#2dd4bf]">Last Activity</span>
                     <span>3 days ago</span>
                   </div>
                 </div>

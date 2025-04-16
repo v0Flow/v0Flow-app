@@ -104,7 +104,7 @@ export default function MessagesPage() {
           <div className="w-80 border-r">
             <div className="p-4">
               <div className="relative">
-                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+                <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-[#2dd4bf]" />
                 <Input
                   type="search"
                   placeholder="Search messages..."
@@ -128,10 +128,10 @@ export default function MessagesPage() {
                   <div className="flex-1 overflow-hidden">
                     <div className="flex items-center justify-between">
                       <h3 className="font-medium">{contact.name}</h3>
-                      <span className="text-xs text-muted-foreground">{contact.time}</span>
+                      <span className="text-xs text-[#2dd4bf]">{contact.time}</span>
                     </div>
-                    <p className="text-sm text-muted-foreground truncate">{contact.lastMessage}</p>
-                    <p className="text-xs text-muted-foreground">{contact.company}</p>
+                    <p className="text-sm text-[#2dd4bf] truncate">{contact.lastMessage}</p>
+                    <p className="text-xs text-[#2dd4bf]">{contact.company}</p>
                   </div>
                   {contact.unread && <div className="h-2 w-2 rounded-full bg-primary"></div>}
                 </div>
@@ -150,7 +150,7 @@ export default function MessagesPage() {
                 </Avatar>
                 <div>
                   <h3 className="font-medium">John Doe</h3>
-                  <p className="text-xs text-muted-foreground">Acme Inc.</p>
+                  <p className="text-xs text-[#2dd4bf]">Acme Inc.</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">

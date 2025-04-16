@@ -125,7 +125,7 @@ export default function NewProjectPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">New Project</h1>
-          <p className="text-muted-foreground">Upload your v0 ZIP file and provide project details</p>
+          <p className="text-[#2dd4bf]">Upload your v0 ZIP file and provide project details</p>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab}>
@@ -146,14 +146,14 @@ export default function NewProjectPage() {
                     <div className="flex flex-col items-center gap-2">
                       <FilePlus className="h-10 w-10 text-primary" />
                       <p className="text-sm font-medium">{file.name}</p>
-                      <p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                      <p className="text-xs text-[#2dd4bf]">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
                       <Button type="button" variant="outline" size="sm" onClick={() => setFile(null)}>
                         Change file
                       </Button>
                     </div>
                   ) : (
                     <label className="flex flex-col items-center gap-2 cursor-pointer">
-                      <Upload className="h-10 w-10 text-muted-foreground" />
+                      <Upload className="h-10 w-10 text-[#2dd4bf]" />
                       <span className="text-lg font-medium">Drag and drop or browse your v0 ZIP file</span>
                       <input type="file" accept=".zip" className="hidden" onChange={handleFileChange} />
                       <Button type="button" variant="outline">
@@ -212,7 +212,7 @@ export default function NewProjectPage() {
                     rows={10}
                     className="resize-none"
                   />
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-[#2dd4bf]">
                     Include information about database needs, authentication requirements, third-party integrations,
                     etc.
                   </p>
@@ -241,7 +241,7 @@ export default function NewProjectPage() {
                       <RadioGroupItem value="basic" id="basic" className="absolute right-4 top-4" />
                       <div className="space-y-2">
                         <h3 className="font-medium">Basic</h3>
-                        <p className="text-sm text-muted-foreground">Essential deployment with minimal customization</p>
+                        <p className="text-sm text-[#2dd4bf]">Essential deployment with minimal customization</p>
                         <p className="font-bold">$499</p>
                         <ul className="space-y-1 text-sm">
                           <li className="flex items-center">
@@ -266,7 +266,7 @@ export default function NewProjectPage() {
                           Popular
                         </div>
                         <h3 className="font-medium">Standard</h3>
-                        <p className="text-sm text-muted-foreground">Complete deployment with customization options</p>
+                        <p className="text-sm text-[#2dd4bf]">Complete deployment with customization options</p>
                         <p className="font-bold">$999</p>
                         <ul className="space-y-1 text-sm">
                           <li className="flex items-center">
@@ -292,7 +292,7 @@ export default function NewProjectPage() {
                       <RadioGroupItem value="premium" id="premium" className="absolute right-4 top-4" />
                       <div className="space-y-2">
                         <h3 className="font-medium">Premium</h3>
-                        <p className="text-sm text-muted-foreground">Enterprise-grade deployment with full support</p>
+                        <p className="text-sm text-[#2dd4bf]">Enterprise-grade deployment with full support</p>
                         <p className="font-bold">$1,999</p>
                         <ul className="space-y-1 text-sm">
                           <li className="flex items-center">
@@ -319,10 +319,10 @@ export default function NewProjectPage() {
 
                 <div className="rounded-lg border p-4 bg-muted/50">
                   <div className="flex items-start gap-4">
-                    <Info className="h-5 w-5 text-muted-foreground mt-0.5" />
+                    <Info className="h-5 w-5 text-[#2dd4bf] mt-0.5" />
                     <div>
                       <h4 className="text-sm font-medium">Payment Information</h4>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         You will be redirected to our payment processor after submitting your project. Your project will
                         begin processing once payment is confirmed.
                       </p>

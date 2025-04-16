@@ -21,14 +21,14 @@ export default async function ConsultantDashboardPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-          <p className="text-muted-foreground">Welcome back to your consultant dashboard</p>
+          <p className="text-[#2dd4bf]">Welcome back to your consultant dashboard</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Assigned Projects</CardTitle>
-              <FileText className="h-4 w-4 text-muted-foreground" />
+              <FileText className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{consultantProjects.length}</div>
@@ -37,7 +37,7 @@ export default async function ConsultantDashboardPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Active Projects</CardTitle>
-              <Clock className="h-4 w-4 text-muted-foreground" />
+              <Clock className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{activeProjects.length}</div>
@@ -46,7 +46,7 @@ export default async function ConsultantDashboardPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Upcoming Consultations</CardTitle>
-              <Calendar className="h-4 w-4 text-muted-foreground" />
+              <Calendar className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">3</div>
@@ -55,7 +55,7 @@ export default async function ConsultantDashboardPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Earnings This Month</CardTitle>
-              <DollarSign className="h-4 w-4 text-muted-foreground" />
+              <DollarSign className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">$2,450</div>
@@ -165,31 +165,31 @@ export default async function ConsultantDashboardPage() {
                   <div className="flex items-center justify-between border-b pb-4">
                     <div>
                       <p className="font-medium">EduTrack Project Kickoff</p>
-                      <p className="text-sm text-muted-foreground">Initial consultation with client</p>
+                      <p className="text-sm text-[#2dd4bf]">Initial consultation with client</p>
                     </div>
                     <div className="text-right">
                       <p className="font-medium">Tomorrow</p>
-                      <p className="text-sm text-muted-foreground">10:00 AM - 11:00 AM</p>
+                      <p className="text-sm text-[#2dd4bf]">10:00 AM - 11:00 AM</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-between border-b pb-4">
                     <div>
                       <p className="font-medium">HealthPulse Schema Review</p>
-                      <p className="text-sm text-muted-foreground">Database schema review with client</p>
+                      <p className="text-sm text-[#2dd4bf]">Database schema review with client</p>
                     </div>
                     <div className="text-right">
                       <p className="font-medium">Wed, Apr 18</p>
-                      <p className="text-sm text-muted-foreground">2:00 PM - 3:00 PM</p>
+                      <p className="text-sm text-[#2dd4bf]">2:00 PM - 3:00 PM</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="font-medium">AgriConnect Deployment</p>
-                      <p className="text-sm text-muted-foreground">Final deployment and handover</p>
+                      <p className="text-sm text-[#2dd4bf]">Final deployment and handover</p>
                     </div>
                     <div className="text-right">
                       <p className="font-medium">Fri, Apr 20</p>
-                      <p className="text-sm text-muted-foreground">1:00 PM - 2:30 PM</p>
+                      <p className="text-sm text-[#2dd4bf]">1:00 PM - 2:30 PM</p>
                     </div>
                   </div>
                 </div>

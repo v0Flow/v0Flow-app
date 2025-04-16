@@ -15,7 +15,7 @@ export function FeatureCard({ icon: Icon, title, description }: FeatureCardProps
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-sm text-muted-foreground">{description}</CardDescription>
+        <CardDescription className="text-sm text-[#2dd4bf]">{description}</CardDescription>
       </CardContent>
     </Card>
   )

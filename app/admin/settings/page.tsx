@@ -42,7 +42,7 @@ export default function SettingsPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
-          <p className="text-muted-foreground">Manage platform settings and configurations</p>
+          <p className="text-[#2dd4bf]">Manage platform settings and configurations</p>
         </div>
 
         <Tabs defaultValue="general">
@@ -78,7 +78,7 @@ export default function SettingsPage() {
                 <div className="flex items-center justify-between">
                   <div className="space-y-0.5">
                     <Label htmlFor="maintenance-mode">Maintenance Mode</Label>
-                    <p className="text-sm text-muted-foreground">Put the platform in maintenance mode</p>
+                    <p className="text-sm text-[#2dd4bf]">Put the platform in maintenance mode</p>
                   </div>
                   <Switch id="maintenance-mode" />
                 </div>
@@ -101,7 +101,7 @@ export default function SettingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
                       <Label>GitHub Integration</Label>
-                      <p className="text-sm text-muted-foreground">Connect to GitHub for code repositories</p>
+                      <p className="text-sm text-[#2dd4bf]">Connect to GitHub for code repositories</p>
                     </div>
                     <Switch defaultChecked />
                   </div>
@@ -114,7 +114,7 @@ export default function SettingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
                       <Label>Vercel Integration</Label>
-                      <p className="text-sm text-muted-foreground">Connect to Vercel for deployments</p>
+                      <p className="text-sm text-[#2dd4bf]">Connect to Vercel for deployments</p>
                     </div>
                     <Switch defaultChecked />
                   </div>
@@ -127,7 +127,7 @@ export default function SettingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
                       <Label>Supabase Integration</Label>
-                      <p className="text-sm text-muted-foreground">Connect to Supabase for database</p>
+                      <p className="text-sm text-[#2dd4bf]">Connect to Supabase for database</p>
                     </div>
                     <Switch defaultChecked />
                   </div>

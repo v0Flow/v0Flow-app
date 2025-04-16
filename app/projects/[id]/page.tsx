@@ -71,7 +71,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <div className="flex flex-col gap-8">
             <div className="flex items-center justify-between">
               <h1 className="text-3xl font-bold tracking-tight">{project.name}</h1>
-              <Button>Approve & Finalize</Button>
+              <Button variant="default">Approve & Finalize</Button>
             </div>
 
             <Card>
@@ -91,7 +91,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                           {step.completed ? (
                             <CheckCircle className="h-8 w-8 text-primary" />
                           ) : (
-                            <Circle className="h-8 w-8 text-muted-foreground" />
+                            <Circle className="h-8 w-8 text-[#2dd4bf]" />
                           )}
                         </div>
                         <div className="flex flex-col gap-1">
@@ -119,15 +119,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <CardContent className="space-y-4">
                     <div>
                       <h3 className="text-sm font-medium">Description</h3>
-                      <p className="text-sm text-muted-foreground">{project.description}</p>
+                      <p className="text-sm text-[#2dd4bf]">{project.description}</p>
                     </div>
                     <div>
                       <h3 className="text-sm font-medium">Created At</h3>
-                      <p className="text-sm text-muted-foreground">{new Date(project.created_at).toLocaleString()}</p>
+                      <p className="text-sm text-[#2dd4bf]">{new Date(project.created_at).toLocaleString()}</p>
                     </div>
                     <div>
                       <h3 className="text-sm font-medium">Last Updated</h3>
-                      <p className="text-sm text-muted-foreground">{new Date(project.updated_at).toLocaleString()}</p>
+                      <p className="text-sm text-[#2dd4bf]">{new Date(project.updated_at).toLocaleString()}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -153,11 +153,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   <CardContent className="space-y-4">
                     <div>
                       <h3 className="text-sm font-medium">GitHub Repository</h3>
-                      <p className="text-sm text-muted-foreground">{project.github_url || "Not deployed yet"}</p>
+                      <p className="text-sm text-[#2dd4bf]">{project.github_url || "Not deployed yet"}</p>
                     </div>
                     <div>
                       <h3 className="text-sm font-medium">Vercel Deployment</h3>
-                      <p className="text-sm text-muted-foreground">{project.vercel_url || "Not deployed yet"}</p>
+                      <p className="text-sm text-[#2dd4bf]">{project.vercel_url || "Not deployed yet"}</p>
                     </div>
                   </CardContent>
                 </Card>

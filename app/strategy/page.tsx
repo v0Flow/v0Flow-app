@@ -94,7 +94,7 @@ export default function StrategyPage() {
         <div className="container max-w-3xl">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold tracking-tight">Book a Strategy Session</h1>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-2 text-[#2dd4bf]">
               Let our consultants help you define and build your perfect system
             </p>
           </div>
@@ -104,34 +104,34 @@ export default function StrategyPage() {
               <div className="flex items-center gap-2">
                 <div
                   className={`flex h-8 w-8 items-center justify-center rounded-full ${
-                    step >= 1 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                    step >= 1 ? "bg-primary text-primary-foreground" : "bg-muted text-[#2dd4bf]"
                   }`}
                 >
                   1
                 </div>
-                <span className={step >= 1 ? "font-medium" : "text-muted-foreground"}>Project Details</span>
+                <span className={step >= 1 ? "font-medium" : "text-[#2dd4bf]"}>Project Details</span>
               </div>
               <Separator className="flex-1 mx-4" />
               <div className="flex items-center gap-2">
                 <div
                   className={`flex h-8 w-8 items-center justify-center rounded-full ${
-                    step >= 2 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                    step >= 2 ? "bg-primary text-primary-foreground" : "bg-muted text-[#2dd4bf]"
                   }`}
                 >
                   2
                 </div>
-                <span className={step >= 2 ? "font-medium" : "text-muted-foreground"}>Select Consultant</span>
+                <span className={step >= 2 ? "font-medium" : "text-[#2dd4bf]"}>Select Consultant</span>
               </div>
               <Separator className="flex-1 mx-4" />
               <div className="flex items-center gap-2">
                 <div
                   className={`flex h-8 w-8 items-center justify-center rounded-full ${
-                    step >= 3 ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"
+                    step >= 3 ? "bg-primary text-primary-foreground" : "bg-muted text-[#2dd4bf]"
                   }`}
                 >
                   3
                 </div>
-                <span className={step >= 3 ? "font-medium" : "text-muted-foreground"}>Payment</span>
+                <span className={step >= 3 ? "font-medium" : "text-[#2dd4bf]"}>Payment</span>
               </div>
             </div>
           </div>
@@ -207,9 +207,9 @@ export default function StrategyPage() {
                   <Label>Logo Upload (Optional)</Label>
                   <div className="flex items-center justify-center border-2 border-dashed border-border rounded-lg p-6">
                     <label className="flex flex-col items-center gap-2 cursor-pointer">
-                      <Upload className="h-8 w-8 text-muted-foreground" />
+                      <Upload className="h-8 w-8 text-[#2dd4bf]" />
                       <span className="text-sm font-medium">Upload your company logo</span>
-                      <span className="text-xs text-muted-foreground">SVG, PNG or JPG (max. 2MB)</span>
+                      <span className="text-xs text-[#2dd4bf]">SVG, PNG or JPG (max. 2MB)</span>
                       <input type="file" accept="image/*" className="hidden" onChange={handleFileChange} />
                       {file && <span className="text-sm text-primary">{file.name}</span>}
                     </label>
@@ -480,11 +480,11 @@ function ConsultantCard({
       />
       <div className="flex gap-4">
         <div className="h-16 w-16 rounded-full bg-muted flex items-center justify-center">
-          <Building className="h-8 w-8 text-muted-foreground" />
+          <Building className="h-8 w-8 text-[#2dd4bf]" />
         </div>
         <div className="space-y-1">
           <h3 className="font-medium">{name}</h3>
-          <p className="text-sm text-muted-foreground">{title}</p>
+          <p className="text-sm text-[#2dd4bf]">{title}</p>
           <div className="flex flex-wrap gap-1 mt-1">
             {specialties.map((specialty) => (
               <span key={specialty} className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
@@ -496,15 +496,15 @@ function ConsultantCard({
       </div>
       <div className="mt-4 grid grid-cols-3 gap-4 text-sm">
         <div>
-          <p className="text-muted-foreground">Location</p>
+          <p className="text-[#2dd4bf]">Location</p>
           <p className="font-medium">{location}</p>
         </div>
         <div>
-          <p className="text-muted-foreground">Rate</p>
+          <p className="text-[#2dd4bf]">Rate</p>
           <p className="font-medium">${rate}/hr</p>
         </div>
         <div>
-          <p className="text-muted-foreground">Availability</p>
+          <p className="text-[#2dd4bf]">Availability</p>
           <p className="font-medium">{availability}</p>
         </div>
       </div>

@@ -10,7 +10,7 @@ export function Navbar() {
           <Logo className="h-8 w-8" />
           <span className="text-xl font-semibold">
             v0Flow
-            <span className="ml-1 text-muted-foreground">Studio</span>
+            <span className="ml-1 text-[#2dd4bf]">Studio</span>
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">

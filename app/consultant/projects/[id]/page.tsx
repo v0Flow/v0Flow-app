@@ -104,7 +104,7 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
                       {step.completed ? (
                         <CheckCircle className="h-8 w-8 text-primary" />
                       ) : (
-                        <Circle className="h-8 w-8 text-muted-foreground" />
+                        <Circle className="h-8 w-8 text-[#2dd4bf]" />
                       )}
                     </div>
                     <div className="flex flex-col gap-1">
@@ -133,21 +133,21 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
               <CardContent className="space-y-4">
                 <div>
                   <h3 className="text-sm font-medium">Description</h3>
-                  <p className="text-sm text-muted-foreground">{project.description}</p>
+                  <p className="text-sm text-[#2dd4bf]">{project.description}</p>
                 </div>
                 <div>
                   <h3 className="text-sm font-medium">Requirements</h3>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-[#2dd4bf]">
                     {project.requirements || "No specific requirements provided."}
                   </p>
                 </div>
                 <div>
                   <h3 className="text-sm font-medium">Created At</h3>
-                  <p className="text-sm text-muted-foreground">{new Date(project.created_at).toLocaleString()}</p>
+                  <p className="text-sm text-[#2dd4bf]">{new Date(project.created_at).toLocaleString()}</p>
                 </div>
                 <div>
                   <h3 className="text-sm font-medium">Last Updated</h3>
-                  <p className="text-sm text-muted-foreground">{new Date(project.updated_at).toLocaleString()}</p>
+                  <p className="text-sm text-[#2dd4bf]">{new Date(project.updated_at).toLocaleString()}</p>
                 </div>
               </CardContent>
             </Card>
@@ -183,7 +183,7 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
                       {project.github_url}
                     </a>
                   ) : (
-                    <p className="text-sm text-muted-foreground">Not deployed yet</p>
+                    <p className="text-sm text-[#2dd4bf]">Not deployed yet</p>
                   )}
                 </div>
                 <div>
@@ -198,7 +198,7 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
                       {project.vercel_url}
                     </a>
                   ) : (
-                    <p className="text-sm text-muted-foreground">Not deployed yet</p>
+                    <p className="text-sm text-[#2dd4bf]">Not deployed yet</p>
                   )}
                 </div>
               </CardContent>
@@ -218,7 +218,7 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
                         <div className="flex items-center justify-between">
                           <div>
                             <h3 className="font-medium">{module.name}</h3>
-                            <p className="text-sm text-muted-foreground">{module.description}</p>
+                            <p className="text-sm text-[#2dd4bf]">{module.description}</p>
                           </div>
                           <div className="flex items-center gap-2">
                             <span className={`text-sm font-medium ${getStatusColor(module.status)}`}>
@@ -232,7 +232,7 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
                       </div>
                     ))
                   ) : (
-                    <p className="text-muted-foreground">No modules have been created for this project yet.</p>
+                    <p className="text-[#2dd4bf]">No modules have been created for this project yet.</p>
                   )}
                 </div>
               </CardContent>
@@ -247,19 +247,19 @@ export default async function ConsultantProjectPage({ params }: ProjectPageProps
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-sm font-medium">Client Name</h3>
-                    <p className="text-sm text-muted-foreground">John Doe</p>
+                    <p className="text-sm text-[#2dd4bf]">John Doe</p>
                   </div>
                   <div>
                     <h3 className="text-sm font-medium">Company</h3>
-                    <p className="text-sm text-muted-foreground">Acme Inc.</p>
+                    <p className="text-sm text-[#2dd4bf]">Acme Inc.</p>
                   </div>
                   <div>
                     <h3 className="text-sm font-medium">Email</h3>
-                    <p className="text-sm text-muted-foreground">john.doe@example.com</p>
+                    <p className="text-sm text-[#2dd4bf]">john.doe@example.com</p>
                   </div>
                   <div>
                     <h3 className="text-sm font-medium">Phone</h3>
-                    <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-sm text-[#2dd4bf]">+1 (555) 123-4567</p>
                   </div>
                 </div>
               </CardContent>
@@ -279,5 +279,5 @@ function getStatusColor(status: string): string {
     failed: "text-red-500",
   }
 
-  return statusColorMap[status] || "text-muted-foreground"
+  return statusColorMap[status] || "text-[#2dd4bf]"
 }

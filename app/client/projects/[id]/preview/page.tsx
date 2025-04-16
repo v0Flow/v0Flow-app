@@ -41,7 +41,7 @@ export default async function ProjectPreviewPage({ params }: PreviewPageProps) {
                 Request Changes
               </Link>
             </Button>
-            <Button>
+            <Button variant="default">
               <ThumbsUp className="mr-2 h-4 w-4" />
               Approve
             </Button>
@@ -65,7 +65,7 @@ export default async function ProjectPreviewPage({ params }: PreviewPageProps) {
                     <iframe src={project.vercel_url} className="h-full w-full" title="Desktop Preview" />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-muted">
-                      <p className="text-muted-foreground">Preview not available yet</p>
+                      <p className="text-[#2dd4bf]">Preview not available yet</p>
                     </div>
                   )}
                 </div>
@@ -83,7 +83,7 @@ export default async function ProjectPreviewPage({ params }: PreviewPageProps) {
                     <iframe src={project.vercel_url} className="h-full w-full" title="Tablet Preview" />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-muted">
-                      <p className="text-muted-foreground">Preview not available yet</p>
+                      <p className="text-[#2dd4bf]">Preview not available yet</p>
                     </div>
                   )}
                 </div>
@@ -101,7 +101,7 @@ export default async function ProjectPreviewPage({ params }: PreviewPageProps) {
                     <iframe src={project.vercel_url} className="h-full w-full" title="Mobile Preview" />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-muted">
-                      <p className="text-muted-foreground">Preview not available yet</p>
+                      <p className="text-[#2dd4bf]">Preview not available yet</p>
                     </div>
                   )}
                 </div>
@@ -133,7 +133,7 @@ export default async function ProjectPreviewPage({ params }: PreviewPageProps) {
                   </label>
                   <textarea
                     id="design-feedback"
-                    className="h-32 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-32 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-[#2dd4bf] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="Provide feedback on the design..."
                   />
                 </div>
@@ -162,7 +162,7 @@ export default async function ProjectPreviewPage({ params }: PreviewPageProps) {
                   </label>
                   <textarea
                     id="functionality-feedback"
-                    className="h-32 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="h-32 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-[#2dd4bf] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     placeholder="Provide feedback on the functionality..."
                   />
                 </div>

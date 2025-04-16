@@ -45,7 +45,7 @@ export default function SettingsPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Settings</h1>
-          <p className="text-muted-foreground">Manage your account settings and preferences</p>
+          <p className="text-[#2dd4bf]">Manage your account settings and preferences</p>
         </div>
 
         <Tabs defaultValue="profile">
@@ -76,7 +76,7 @@ export default function SettingsPage() {
                         Remove
                       </Button>
                     </div>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-xs text-[#2dd4bf]">
                       Recommended: Square JPG, PNG, or GIF, at least 400x400 pixels.
                     </p>
                   </div>
@@ -141,7 +141,7 @@ export default function SettingsPage() {
                   <div className="flex items-center justify-between">
                     <div className="space-y-0.5">
                       <Label htmlFor="two-factor">Enable Two-Factor Authentication</Label>
-                      <p className="text-sm text-muted-foreground">Add an extra layer of security to your account</p>
+                      <p className="text-sm text-[#2dd4bf]">Add an extra layer of security to your account</p>
                     </div>
                     <Switch id="two-factor" />
                   </div>

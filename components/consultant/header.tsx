@@ -22,7 +22,7 @@ export function ConsultantHeader() {
       <div className="flex items-center gap-4 lg:gap-6">
         <form className="hidden md:flex">
           <div className="relative">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-[#2dd4bf]" />
             <Input
               type="search"
               placeholder="Search projects..."
@@ -48,22 +48,22 @@ export function ConsultantHeader() {
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">New project assigned</p>
-                  <p className="text-xs text-muted-foreground">You've been assigned to the EduTrack project</p>
-                  <p className="text-xs text-muted-foreground">10 minutes ago</p>
+                  <p className="text-xs text-[#2dd4bf]">You've been assigned to the EduTrack project</p>
+                  <p className="text-xs text-[#2dd4bf]">10 minutes ago</p>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">Client message</p>
-                  <p className="text-xs text-muted-foreground">New message from client regarding Mjakazi Connect</p>
-                  <p className="text-xs text-muted-foreground">1 hour ago</p>
+                  <p className="text-xs text-[#2dd4bf]">New message from client regarding Mjakazi Connect</p>
+                  <p className="text-xs text-[#2dd4bf]">1 hour ago</p>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">Consultation scheduled</p>
-                  <p className="text-xs text-muted-foreground">New consultation scheduled for tomorrow at 2 PM</p>
-                  <p className="text-xs text-muted-foreground">3 hours ago</p>
+                  <p className="text-xs text-[#2dd4bf]">New consultation scheduled for tomorrow at 2 PM</p>
+                  <p className="text-xs text-[#2dd4bf]">3 hours ago</p>
                 </div>
               </DropdownMenuItem>
             </div>

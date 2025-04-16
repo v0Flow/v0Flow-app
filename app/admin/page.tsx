@@ -20,48 +20,48 @@ export default async function AdminDashboardPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-          <p className="text-muted-foreground">Overview of your platform's performance</p>
+          <p className="text-[#2dd4bf]">Overview of your platform's performance</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Total Projects</CardTitle>
-              <FileText className="h-4 w-4 text-muted-foreground" />
+              <FileText className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{projects.length}</div>
-              <p className="text-xs text-muted-foreground">+{Math.floor(Math.random() * 10)}% from last month</p>
+              <p className="text-xs text-[#2dd4bf]">+{Math.floor(Math.random() * 10)}% from last month</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Active Projects</CardTitle>
-              <Clock className="h-4 w-4 text-muted-foreground" />
+              <Clock className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{activeProjects}</div>
-              <p className="text-xs text-muted-foreground">+{Math.floor(Math.random() * 10)}% from last month</p>
+              <p className="text-xs text-[#2dd4bf]">+{Math.floor(Math.random() * 10)}% from last month</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Total Revenue</CardTitle>
-              <DollarSign className="h-4 w-4 text-muted-foreground" />
+              <DollarSign className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">${totalRevenue.toLocaleString()}</div>
-              <p className="text-xs text-muted-foreground">+{Math.floor(Math.random() * 15)}% from last month</p>
+              <p className="text-xs text-[#2dd4bf]">+{Math.floor(Math.random() * 15)}% from last month</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Total Users</CardTitle>
-              <Users className="h-4 w-4 text-muted-foreground" />
+              <Users className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{clients.length + consultants.length}</div>
-              <p className="text-xs text-muted-foreground">+{Math.floor(Math.random() * 10)}% from last month</p>
+              <p className="text-xs text-[#2dd4bf]">+{Math.floor(Math.random() * 10)}% from last month</p>
             </CardContent>
           </Card>
         </div>
@@ -78,7 +78,7 @@ export default async function AdminDashboardPage() {
                   <div key={project.id} className="flex items-center justify-between">
                     <div className="space-y-1">
                       <p className="font-medium">{project.name}</p>
-                      <p className="text-sm text-muted-foreground">{project.description}</p>
+                      <p className="text-sm text-[#2dd4bf]">{project.description}</p>
                     </div>
                     <div className="flex items-center gap-4">
                       <div className="text-sm">
@@ -106,31 +106,31 @@ export default async function AdminDashboardPage() {
                 <div className="flex items-center justify-between">
                   <div className="space-y-1">
                     <p className="font-medium">EduTrack Project</p>
-                    <p className="text-sm text-muted-foreground">With David Ochieng</p>
+                    <p className="text-sm text-[#2dd4bf]">With David Ochieng</p>
                   </div>
                   <div className="text-sm">
                     <p className="font-medium">Tomorrow</p>
-                    <p className="text-right text-muted-foreground">10:00 AM</p>
+                    <p className="text-right text-[#2dd4bf]">10:00 AM</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="space-y-1">
                     <p className="font-medium">HealthPulse Project</p>
-                    <p className="text-sm text-muted-foreground">With Sarah Johnson</p>
+                    <p className="text-sm text-[#2dd4bf]">With Sarah Johnson</p>
                   </div>
                   <div className="text-sm">
                     <p className="font-medium">Wed, Apr 18</p>
-                    <p className="text-right text-muted-foreground">2:00 PM</p>
+                    <p className="text-right text-[#2dd4bf]">2:00 PM</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="space-y-1">
                     <p className="font-medium">AgriConnect Project</p>
-                    <p className="text-sm text-muted-foreground">With Amina Diallo</p>
+                    <p className="text-sm text-[#2dd4bf]">With Amina Diallo</p>
                   </div>
                   <div className="text-sm">
                     <p className="font-medium">Fri, Apr 20</p>
-                    <p className="text-right text-muted-foreground">1:00 PM</p>
+                    <p className="text-right text-[#2dd4bf]">1:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default async function AdminDashboardPage() {
                     <div key={client.id} className="flex items-center justify-between">
                       <div className="space-y-1">
                         <p className="font-medium">{client.company_name}</p>
-                        <p className="text-sm text-muted-foreground">{client.contact_name}</p>
+                        <p className="text-sm text-[#2dd4bf]">{client.contact_name}</p>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="text-sm">
@@ -186,7 +186,7 @@ export default async function AdminDashboardPage() {
                     <div key={consultant.id} className="flex items-center justify-between">
                       <div className="space-y-1">
                         <p className="font-medium">{consultant.name}</p>
-                        <p className="text-sm text-muted-foreground">{consultant.title}</p>
+                        <p className="text-sm text-[#2dd4bf]">{consultant.title}</p>
                       </div>
                       <div className="flex items-center gap-4">
                         <div className="text-sm">
@@ -219,10 +219,10 @@ export default async function AdminDashboardPage() {
                       </div>
                       <div className="space-y-1">
                         <p className="font-medium">Executive Assistant</p>
-                        <p className="text-sm text-muted-foreground">Generated daily briefing</p>
+                        <p className="text-sm text-[#2dd4bf]">Generated daily briefing</p>
                       </div>
                     </div>
-                    <div className="text-sm text-muted-foreground">10 minutes ago</div>
+                    <div className="text-sm text-[#2dd4bf]">10 minutes ago</div>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -231,10 +231,10 @@ export default async function AdminDashboardPage() {
                       </div>
                       <div className="space-y-1">
                         <p className="font-medium">Client Service Assistant</p>
-                        <p className="text-sm text-muted-foreground">Sent status update to 3 clients</p>
+                        <p className="text-sm text-[#2dd4bf]">Sent status update to 3 clients</p>
                       </div>
                     </div>
-                    <div className="text-sm text-muted-foreground">1 hour ago</div>
+                    <div className="text-sm text-[#2dd4bf]">1 hour ago</div>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -243,10 +243,10 @@ export default async function AdminDashboardPage() {
                       </div>
                       <div className="space-y-1">
                         <p className="font-medium">Marketing Assistant</p>
-                        <p className="text-sm text-muted-foreground">Posted new case study to LinkedIn</p>
+                        <p className="text-sm text-[#2dd4bf]">Posted new case study to LinkedIn</p>
                       </div>
                     </div>
-                    <div className="text-sm text-muted-foreground">3 hours ago</div>
+                    <div className="text-sm text-[#2dd4bf]">3 hours ago</div>
                   </div>
                 </div>
               </CardContent>

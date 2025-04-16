@@ -22,7 +22,7 @@ export default async function ClientDashboardPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-            <p className="text-muted-foreground">Welcome back to your project dashboard</p>
+            <p className="text-[#2dd4bf]">Welcome back to your project dashboard</p>
           </div>
           <Button asChild>
             <Link href="/client/projects/new">
@@ -36,7 +36,7 @@ export default async function ClientDashboardPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Total Projects</CardTitle>
-              <FileText className="h-4 w-4 text-muted-foreground" />
+              <FileText className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{clientProjects.length}</div>
@@ -45,7 +45,7 @@ export default async function ClientDashboardPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Active Projects</CardTitle>
-              <Clock className="h-4 w-4 text-muted-foreground" />
+              <Clock className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{activeProjects.length}</div>
@@ -54,7 +54,7 @@ export default async function ClientDashboardPage() {
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2">
               <CardTitle className="text-sm font-medium">Completed Projects</CardTitle>
-              <CheckCircle className="h-4 w-4 text-muted-foreground" />
+              <CheckCircle className="h-4 w-4 text-[#2dd4bf]" />
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{completedProjects.length}</div>

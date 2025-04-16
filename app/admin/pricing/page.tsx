@@ -14,7 +14,7 @@ export default async function PricingPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Pricing Tiers</h1>
-            <p className="text-muted-foreground">Manage your pricing tiers and features</p>
+            <p className="text-[#2dd4bf]">Manage your pricing tiers and features</p>
           </div>
           <Button asChild>
             <Link href="/admin/pricing/new">
@@ -34,7 +34,7 @@ export default async function PricingPage() {
               <CardContent className="flex-1">
                 <div className="mb-4">
                   <span className="text-3xl font-bold">${tier.base_price}</span>
-                  <span className="text-muted-foreground"> / project</span>
+                  <span className="text-[#2dd4bf]"> / project</span>
                 </div>
                 <ul className="space-y-2">
                   {tier.features.map((feature, index) => (

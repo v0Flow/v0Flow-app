@@ -22,7 +22,7 @@ export function ClientHeader() {
       <div className="flex items-center gap-4 lg:gap-6">
         <form className="hidden md:flex">
           <div className="relative">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-[#2dd4bf]" />
             <Input
               type="search"
               placeholder="Search projects..."
@@ -48,17 +48,17 @@ export function ClientHeader() {
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">Project status updated</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-[#2dd4bf]">
                     Your project "EduTrack" is now in the database deployment stage
                   </p>
-                  <p className="text-xs text-muted-foreground">30 minutes ago</p>
+                  <p className="text-xs text-[#2dd4bf]">30 minutes ago</p>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">Consultant message</p>
-                  <p className="text-xs text-muted-foreground">Sarah Johnson sent you a message about your project</p>
-                  <p className="text-xs text-muted-foreground">2 hours ago</p>
+                  <p className="text-xs text-[#2dd4bf]">Sarah Johnson sent you a message about your project</p>
+                  <p className="text-xs text-[#2dd4bf]">2 hours ago</p>
                 </div>
               </DropdownMenuItem>
             </div>

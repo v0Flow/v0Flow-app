@@ -14,7 +14,7 @@ export default function ConsultationsPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Consultations</h1>
-            <p className="text-muted-foreground">Manage your strategy sessions and consultations</p>
+            <p className="text-[#2dd4bf]">Manage your strategy sessions and consultations</p>
           </div>
           <Button asChild>
             <Link href="/strategy">
@@ -47,7 +47,7 @@ export default function ConsultationsPage() {
                         </Avatar>
                         <div>
                           <h3 className="font-medium">EduTrack Project Kickoff</h3>
-                          <p className="text-sm text-muted-foreground">With Sarah Johnson</p>
+                          <p className="text-sm text-[#2dd4bf]">With Sarah Johnson</p>
                           <div className="mt-2 flex flex-wrap gap-2">
                             <Badge variant="outline" className="flex items-center gap-1">
                               <Calendar className="h-3 w-3" />
@@ -88,7 +88,7 @@ export default function ConsultationsPage() {
                         </Avatar>
                         <div>
                           <h3 className="font-medium">HealthPulse Schema Review</h3>
-                          <p className="text-sm text-muted-foreground">With David Ochieng</p>
+                          <p className="text-sm text-[#2dd4bf]">With David Ochieng</p>
                           <div className="mt-2 flex flex-wrap gap-2">
                             <Badge variant="outline" className="flex items-center gap-1">
                               <Calendar className="h-3 w-3" />
@@ -141,7 +141,7 @@ export default function ConsultationsPage() {
                         </Avatar>
                         <div>
                           <h3 className="font-medium">Initial Project Discussion</h3>
-                          <p className="text-sm text-muted-foreground">With Amina Diallo</p>
+                          <p className="text-sm text-[#2dd4bf]">With Amina Diallo</p>
                           <div className="mt-2 flex flex-wrap gap-2">
                             <Badge variant="outline" className="flex items-center gap-1">
                               <Calendar className="h-3 w-3" />
@@ -187,7 +187,7 @@ export default function ConsultationsPage() {
                         </div>
                         <div>
                           <h3 className="font-medium">Initial Project Discussion</h3>
-                          <p className="text-sm text-muted-foreground">With Amina Diallo</p>
+                          <p className="text-sm text-[#2dd4bf]">With Amina Diallo</p>
                           <div className="mt-2 flex flex-wrap gap-2">
                             <Badge variant="outline" className="flex items-center gap-1">
                               <Calendar className="h-3 w-3" />

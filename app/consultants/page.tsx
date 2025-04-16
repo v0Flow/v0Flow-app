@@ -55,7 +55,7 @@ export default function ConsultantsPage() {
               <br />
               top Strategy Consultants
             </h1>
-            <p className="mx-auto max-w-2xl text-xl text-muted-foreground">
+            <p className="mx-auto max-w-2xl text-xl text-[#2dd4bf]">
               Transform ideas into live platforms for NGOs, founders, and SMEs
             </p>
             <div className="flex justify-center gap-4">
@@ -63,12 +63,12 @@ export default function ConsultantsPage() {
                 <MapPin className="h-5 w-5 text-primary" />
                 <span className="text-lg">Remote</span>
               </div>
-              <div className="text-muted-foreground">|</div>
+              <div className="text-[#2dd4bf]">|</div>
               <div className="flex items-center gap-2">
                 <span className="text-lg">$300/hr</span>
               </div>
             </div>
-            <Button size="lg" className="rounded-full">
+            <Button size="lg" variant="default" className="rounded-full">
               Apply Now
             </Button>
           </div>
@@ -78,7 +78,7 @@ export default function ConsultantsPage() {
           <div className="container space-y-12">
             <div className="text-center">
               <h2 className="text-3xl font-bold tracking-tight">Meet Our Consultants</h2>
-              <p className="mt-4 text-xl text-muted-foreground">
+              <p className="mt-4 text-xl text-[#2dd4bf]">
                 Work with experienced professionals who understand your market
               </p>
             </div>
@@ -107,15 +107,15 @@ export default function ConsultantsPage() {
                         </span>
                       ))}
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2 text-sm text-[#2dd4bf]">
                       <MapPin className="h-4 w-4" />
                       <span>{consultant.location}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2 text-sm text-[#2dd4bf]">
                       <Clock className="h-4 w-4" />
                       <span>{consultant.rate}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2 text-sm text-[#2dd4bf]">
                       <Calendar className="h-4 w-4" />
                       <span>{consultant.availability}</span>
                     </div>
@@ -134,26 +134,26 @@ export default function ConsultantsPage() {
             <div className="grid gap-12 md:grid-cols-3">
               <div className="space-y-4 md:col-span-1">
                 <h2 className="text-3xl font-bold tracking-tight">What Our Consultants Do</h2>
-                <p className="text-muted-foreground">
+                <p className="text-[#2dd4bf]">
                   Our consultants provide end-to-end support for your digital transformation journey
                 </p>
               </div>
               <div className="space-y-8 md:col-span-2">
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Run 2-hour strategy workshops</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#2dd4bf]">
                     Collaborate with clients to understand requirements and define project scope
                   </p>
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Review AI-powered prototypes</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#2dd4bf]">
                     Analyze v0-generated prototypes and suggest improvements for production
                   </p>
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Curate in our Consultant Marketplace</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-[#2dd4bf]">
                     Provide ongoing support and expertise to clients through our platform
                   </p>
                 </div>
@@ -165,16 +165,16 @@ export default function ConsultantsPage() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Privacy
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Contact
             </a>
           </div>

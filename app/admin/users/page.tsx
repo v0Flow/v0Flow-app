@@ -15,7 +15,7 @@ export default function UsersPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Users</h1>
-            <p className="text-muted-foreground">Manage users, clients, and consultants</p>
+            <p className="text-[#2dd4bf]">Manage users, clients, and consultants</p>
           </div>
           <Button asChild>
             <Link href="/admin/users/new">
@@ -27,7 +27,7 @@ export default function UsersPage() {
 
         <div className="flex items-center gap-4">
           <div className="relative flex-1">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-[#2dd4bf]" />
             <Input type="search" placeholder="Search users..." className="w-full rounded-lg bg-background pl-8" />
           </div>
         </div>

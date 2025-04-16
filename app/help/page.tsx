@@ -12,7 +12,7 @@ export default function HelpPage() {
         <div className="container">
           <div className="mb-8">
             <h1 className="text-3xl font-bold tracking-tight">Help & Documentation</h1>
-            <p className="mt-2 text-muted-foreground">
+            <p className="mt-2 text-[#2dd4bf]">
               Learn how to use v0Flow Studio and navigate through different parts of the platform
             </p>
           </div>
@@ -87,12 +87,12 @@ export default function HelpPage() {
                   <TabsContent value="client-guide" className="space-y-4 pt-4">
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Client Dashboard Overview</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#2dd4bf]">
                         The client dashboard is your central hub for managing projects, tracking progress, and
                         communicating with consultants.
                       </p>
                       <h4 className="text-md font-medium mt-4">Key Features:</h4>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                      <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                         <li>Project overview with status indicators</li>
                         <li>Detailed project pages with progress tracking</li>
                         <li>Preview functionality for reviewing your system</li>
@@ -102,11 +102,11 @@ export default function HelpPage() {
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Tracking Project Progress</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#2dd4bf]">
                         To track your project's progress, navigate to "My Projects" in the client dashboard, then select
                         a specific project. The project detail page shows:
                       </p>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                      <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                         <li>Current stage in the deployment pipeline with visual indicators</li>
                         <li>Database schema generation status</li>
                         <li>GitHub code repository status and links</li>
@@ -118,12 +118,12 @@ export default function HelpPage() {
                   <TabsContent value="consultant-guide" className="space-y-4 pt-4">
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Consultant Dashboard Overview</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#2dd4bf]">
                         The consultant dashboard allows you to manage client projects, schedule strategy sessions, and
                         track your earnings.
                       </p>
                       <h4 className="text-md font-medium mt-4">Key Features:</h4>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                      <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                         <li>Project management tools</li>
                         <li>Client communication interface</li>
                         <li>Strategy session scheduling</li>
@@ -133,11 +133,11 @@ export default function HelpPage() {
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Managing Projects</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#2dd4bf]">
                         As a consultant, you can manage projects by navigating to the "Projects" section in your
                         dashboard. From there, you can:
                       </p>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                      <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                         <li>View all assigned projects</li>
                         <li>Access detailed project information</li>
                         <li>Manage database schema generation</li>
@@ -149,12 +149,12 @@ export default function HelpPage() {
                   <TabsContent value="admin-guide" className="space-y-4 pt-4">
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Admin Dashboard Overview</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#2dd4bf]">
                         The admin dashboard provides a complete overview of all platform activities, including projects,
                         clients, consultants, and more.
                       </p>
                       <h4 className="text-md font-medium mt-4">Key Features:</h4>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                      <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                         <li>Platform-wide metrics and analytics</li>
                         <li>User management (clients and consultants)</li>
                         <li>Project oversight and management</li>
@@ -165,10 +165,10 @@ export default function HelpPage() {
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-lg font-medium">Managing Users and Projects</h3>
-                      <p className="text-muted-foreground">
+                      <p className="text-[#2dd4bf]">
                         As an admin, you have full control over users and projects. You can:
                       </p>
-                      <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1 mt-1">
+                      <ul className="list-disc list-inside text-sm text-[#2dd4bf] space-y-1 mt-1">
                         <li>Create, edit, and delete user accounts</li>
                         <li>Assign consultants to projects</li>
                         <li>Monitor project progress across the platform</li>
@@ -187,16 +187,16 @@ export default function HelpPage() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Privacy
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Contact
             </a>
           </div>

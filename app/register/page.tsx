@@ -54,11 +54,11 @@ export default function RegisterPage() {
             <Logo className="h-10 w-10" />
             <span className="text-2xl font-semibold">
               v0Flow
-              <span className="ml-1 text-muted-foreground">Studio</span>
+              <span className="ml-1 text-[#2dd4bf]">Studio</span>
             </span>
           </Link>
           <h1 className="text-3xl font-bold">Create an account</h1>
-          <p className="mt-2 text-muted-foreground">Sign up to get started with v0Flow Studio</p>
+          <p className="mt-2 text-[#2dd4bf]">Sign up to get started with v0Flow Studio</p>
         </div>
         <Card>
           <form onSubmit={handleSubmit}>
@@ -106,7 +106,7 @@ export default function RegisterPage() {
               <Button type="submit" className="w-full" disabled={loading}>
                 {loading ? "Creating account..." : "Create Account"}
               </Button>
-              <p className="mt-4 text-center text-sm text-muted-foreground">
+              <p className="mt-4 text-center text-sm text-[#2dd4bf]">
                 Already have an account?{" "}
                 <Link href="/login" className="text-primary hover:underline">
                   Sign in

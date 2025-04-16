@@ -28,51 +28,46 @@ export function FileUpload() {
     }
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!file) {
-      setError("Please select a ZIP file")
-      return
-    }
-    if (!description) {
-      setError("Please provide a system description")
-      return
-    }
+  import { parseSchemaFromZip } from '@/lib/parseZip'
 
-    setUploading(true)
-    setError(null)
+const handleUpload = async () => {
+  if (!file) return alert("Please select a file.")
 
-    try {
-      // Upload file to Supabase Storage
-      const fileName = `${Date.now()}-${file.name}`
-      const { data: fileData, error: fileError } = await supabase.storage.from("v0-projects").upload(fileName, file)
+  setUploading(true)
+  setError(null)
 
-      if (fileError) throw fileError
+  try {
+    const fileName = `${Date.now()}_${file.name}`
+    const { error: uploadError } = await supabase.storage.from('projects').upload(fileName, file)
+    if (uploadError) throw new Error(uploadError.message)
 
-      // Create project record in database
-      const { data: projectData, error: projectError } = await supabase
-        .from("projects")
-        .insert([
-          {
-            name: file.name.replace(".zip", ""),
-            description,
-            file_path: fileName,
-            status: "uploaded",
-          },
-        ])
-        .select()
+    const fileUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/projects/${fileName}`
 
-      if (projectError) throw projectError
+    // 🔍 Parse the ZIP for schema.sql
+    const schemaResult = await parseSchemaFromZip(file)
 
-      // Redirect to project page
-      window.location.href = `/projects/${projectData[0].id}`
-    } catch (err) {
-      console.error(err)
-      setError("Failed to upload project. Please try again.")
-    } finally {
-      setUploading(false)
-    }
+    // 💾 Save to Supabase
+    const { data: projectData, error: dbError } = await supabase.from('projects').insert([{
+      file_name: fileName,
+      file_url: fileUrl,
+      description,
+      schema_found: schemaResult.found,
+      schema_content: schemaResult.content,
+      checkpoint: { stage: 'schema_checked' },
+    }]).select()
+
+    if (dbError) throw new Error(dbError.message)
+
+    // ✅ Redirect or show success
+    window.location.href = `/projects/${projectData[0].id}`
+  } catch (err) {
+    console.error("Upload error:", err)
+    setError("Failed to upload project. Please try again.")
+  } finally {
+    setUploading(false)
   }
+}
+
 
   return (
     <Card className="w-full max-w-md">
@@ -83,14 +78,14 @@ export function FileUpload() {
               <div className="flex flex-col items-center gap-2">
                 <FilePlus className="h-10 w-10 text-primary" />
                 <p className="text-sm font-medium">{file.name}</p>
-                <p className="text-xs text-muted-foreground">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                <p className="text-xs text-[#2dd4bf]">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
                 <Button type="button" variant="outline" size="sm" onClick={() => setFile(null)}>
                   Change file
                 </Button>
               </div>
             ) : (
               <label className="flex flex-col items-center gap-2 cursor-pointer">
-                <Upload className="h-10 w-10 text-muted-foreground" />
+                <Upload className="h-10 w-10 text-[#2dd4bf]" />
                 <span className="text-lg font-medium">Drag and drop or browse your v0 ZIP file</span>
                 <input type="file" accept=".zip" className="hidden" onChange={handleFileChange} />
                 <Button type="button" variant="outline">

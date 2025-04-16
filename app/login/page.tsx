@@ -48,11 +48,11 @@ export default function LoginPage() {
             <Logo className="h-10 w-10" />
             <span className="text-2xl font-semibold">
               v0Flow
-              <span className="ml-1 text-muted-foreground">Studio</span>
+              <span className="ml-1 text-[#2dd4bf]">Studio</span>
             </span>
           </Link>
           <h1 className="text-3xl font-bold">Welcome back</h1>
-          <p className="mt-2 text-muted-foreground">Sign in to your account to continue</p>
+          <p className="mt-2 text-[#2dd4bf]">Sign in to your account to continue</p>
         </div>
         <Card>
           <form onSubmit={handleSubmit}>
@@ -92,7 +92,7 @@ export default function LoginPage() {
               <Button type="submit" className="w-full" disabled={loading}>
                 {loading ? "Signing in..." : "Sign In"}
               </Button>
-              <p className="mt-4 text-center text-sm text-muted-foreground">
+              <p className="mt-4 text-center text-sm text-[#2dd4bf]">
                 Don&apos;t have an account?{" "}
                 <Link href="/register" className="text-primary hover:underline">
                   Sign up

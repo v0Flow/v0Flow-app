@@ -45,19 +45,19 @@ export function ProjectCounter({ projectsCount, avgLaunchTime, revenueSaved }: P
     <div className="grid gap-4 md:grid-cols-3">
       <Card className="bg-card/50">
         <CardContent className="p-6 text-center">
-          <h3 className="text-lg font-medium text-muted-foreground">Projects Built</h3>
+          <h3 className="text-lg font-medium text-[#2dd4bf]">Projects Built</h3>
           <p className="text-4xl font-bold mt-2">{animatedProjectsCount}</p>
         </CardContent>
       </Card>
       <Card className="bg-card/50">
         <CardContent className="p-6 text-center">
-          <h3 className="text-lg font-medium text-muted-foreground">Avg Time to Launch</h3>
+          <h3 className="text-lg font-medium text-[#2dd4bf]">Avg Time to Launch</h3>
           <p className="text-4xl font-bold mt-2">{avgLaunchTime} days</p>
         </CardContent>
       </Card>
       <Card className="bg-card/50">
         <CardContent className="p-6 text-center">
-          <h3 className="text-lg font-medium text-muted-foreground">Revenue Saved vs Custom Dev</h3>
+          <h3 className="text-lg font-medium text-[#2dd4bf]">Revenue Saved vs Custom Dev</h3>
           <p className="text-4xl font-bold mt-2">${(animatedRevenueSaved / 1000).toFixed(0)}k</p>
         </CardContent>
       </Card>

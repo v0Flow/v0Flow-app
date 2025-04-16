@@ -23,11 +23,11 @@ export default function Home() {
                 <br />
                 in just 5 days
               </h1>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-[#2dd4bf]">
                 Transform your v0 ZIP prototypes into full-stack systems with our AI-driven deployment platform
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="rounded-full" asChild>
+                <Button size="lg" variant="default" className="rounded-full" asChild>
                   <Link href="/client/projects/new">
                     <Upload className="mr-2 h-5 w-5" />
                     Upload ZIP
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">How It Works</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-[#2dd4bf] max-w-2xl mx-auto">
                 Our platform automates the entire process from prototype to production
               </p>
             </div>
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">Our Process</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-[#2dd4bf] max-w-2xl mx-auto">
                 From design to deployment in 5 simple steps
               </p>
             </div>
@@ -98,21 +98,21 @@ export default function Home() {
                   <Upload className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold">Upload ZIP</h3>
-                <p className="text-muted-foreground">Upload your v0.dev ZIP file and describe your system</p>
+                <p className="text-[#2dd4bf]">Upload your v0.dev ZIP file and describe your system</p>
               </div>
               <div className="flex flex-col items-center text-center gap-4">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Cpu className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold">AI Processing</h3>
-                <p className="text-muted-foreground">Our AI analyzes your design and generates the database schema</p>
+                <p className="text-[#2dd4bf]">Our AI analyzes your design and generates the database schema</p>
               </div>
               <div className="flex flex-col items-center text-center gap-4">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Clock className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold">Deployment</h3>
-                <p className="text-muted-foreground">
+                <p className="text-[#2dd4bf]">
                   We deploy your database, push code to GitHub, and deploy to Vercel
                 </p>
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
                   <CheckCircle className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-bold">Go Live</h3>
-                <p className="text-muted-foreground">Preview, approve, and launch your production-ready system</p>
+                <p className="text-[#2dd4bf]">Preview, approve, and launch your production-ready system</p>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">Pricing Calculator</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Get an instant quote for your project</p>
+              <p className="text-xl text-[#2dd4bf] max-w-2xl mx-auto">Get an instant quote for your project</p>
             </div>
             <PricingCalculator />
           </div>
@@ -143,7 +143,7 @@ export default function Home() {
           <div className="container space-y-12">
             <div className="text-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">What Our Clients Say</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-[#2dd4bf] max-w-2xl mx-auto">
                 Hear from clients and consultants who have used our platform
               </p>
             </div>
@@ -191,11 +191,11 @@ export default function Home() {
           <div className="container">
             <div className="rounded-xl bg-primary/10 p-8 md:p-12 lg:p-16 text-center space-y-6">
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Ready to launch your platform?</h2>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-xl text-[#2dd4bf] max-w-2xl mx-auto">
                 Get started today and have your system live in 5 days or less
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-                <Button size="lg" className="rounded-full" asChild>
+                <Button size="lg" variant="default" className="rounded-full" asChild>
                   <Link href="/client/projects/new">
                     <Upload className="mr-2 h-5 w-5" />
                     Upload ZIP
@@ -215,16 +215,16 @@ export default function Home() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Privacy
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Contact
             </a>
           </div>

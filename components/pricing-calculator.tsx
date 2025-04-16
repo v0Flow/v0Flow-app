@@ -81,7 +81,7 @@ export function PricingCalculator() {
             />
             <span className="w-16 text-right font-medium">{estimatedHours} hrs</span>
           </div>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-[#2dd4bf]">
             Base development cost: ${estimatedHours * PRICING.baseHourlyRate}
           </p>
         </div>

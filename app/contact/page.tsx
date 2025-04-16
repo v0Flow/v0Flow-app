@@ -58,7 +58,7 @@ export default function ContactPage() {
         <div className="container">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold tracking-tight">Contact Us</h1>
-            <p className="mt-2 text-muted-foreground">Get in touch with our team for any questions or inquiries</p>
+            <p className="mt-2 text-[#2dd4bf]">Get in touch with our team for any questions or inquiries</p>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-medium">Office</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Nairobi Garage, Pinetree Plaza
                         <br />
                         Ngong Road, Nairobi, Kenya
@@ -172,20 +172,20 @@ export default function ContactPage() {
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <h3 className="font-medium">How long does it take to deploy my project?</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-[#2dd4bf]">
                       Most projects are deployed within 5 days from the time you upload your v0 ZIP file.
                     </p>
                   </div>
                   <div className="space-y-2">
                     <h3 className="font-medium">What formats do you accept for upload?</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-[#2dd4bf]">
                       We accept ZIP files exported directly from v0.dev. These files contain all the necessary
                       components for us to build your application.
                     </p>
                   </div>
                   <div className="space-y-2">
                     <h3 className="font-medium">How do I book a strategy session?</h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-[#2dd4bf]">
                       You can book a strategy session by visiting our{" "}
                       <Link href="/strategy" className="text-primary hover:underline">
                         Strategy Session
@@ -207,13 +207,13 @@ export default function ContactPage() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/terms" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </Link>
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/privacy" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Privacy
             </Link>
             <Link href="/contact" className="text-sm text-primary hover:text-primary/80">

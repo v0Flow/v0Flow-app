@@ -40,7 +40,7 @@ export default function CaseStudiesPage() {
         <div className="container space-y-12">
           <div>
             <h1 className="text-4xl font-bold tracking-tight">Case Studies</h1>
-            <p className="mt-4 text-xl text-muted-foreground">
+            <p className="mt-4 text-xl text-[#2dd4bf]">
               See how we've helped organizations transform their v0 prototypes into production-ready applications
             </p>
           </div>
@@ -61,16 +61,16 @@ export default function CaseStudiesPage() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Privacy
             </a>
-            <a href="#" className="text-sm text-muted-foreground hover:text-foreground">
+            <a href="#" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Contact
             </a>
           </div>

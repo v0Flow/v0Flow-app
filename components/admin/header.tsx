@@ -23,7 +23,7 @@ export function AdminHeader() {
       <div className="flex items-center gap-4 lg:gap-6">
         <form className="hidden md:flex">
           <div className="relative">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-[#2dd4bf]" />
             <Input
               type="search"
               placeholder="Search..."
@@ -49,22 +49,22 @@ export function AdminHeader() {
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">New project submitted</p>
-                  <p className="text-xs text-muted-foreground">Mjakazi Connect project was uploaded</p>
-                  <p className="text-xs text-muted-foreground">2 minutes ago</p>
+                  <p className="text-xs text-[#2dd4bf]">Mjakazi Connect project was uploaded</p>
+                  <p className="text-xs text-[#2dd4bf]">2 minutes ago</p>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">Database deployment completed</p>
-                  <p className="text-xs text-muted-foreground">EduTrack database was successfully deployed</p>
-                  <p className="text-xs text-muted-foreground">1 hour ago</p>
+                  <p className="text-xs text-[#2dd4bf]">EduTrack database was successfully deployed</p>
+                  <p className="text-xs text-[#2dd4bf]">1 hour ago</p>
                 </div>
               </DropdownMenuItem>
               <DropdownMenuItem className="cursor-pointer">
                 <div className="flex flex-col gap-1">
                   <p className="text-sm font-medium">New consultant application</p>
-                  <p className="text-xs text-muted-foreground">David Ochieng applied to be a consultant</p>
-                  <p className="text-xs text-muted-foreground">3 hours ago</p>
+                  <p className="text-xs text-[#2dd4bf]">David Ochieng applied to be a consultant</p>
+                  <p className="text-xs text-[#2dd4bf]">3 hours ago</p>
                 </div>
               </DropdownMenuItem>
             </div>

@@ -12,7 +12,7 @@ export default function AdminHelpPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Help & Support</h1>
-          <p className="text-muted-foreground">Resources and documentation for administrators</p>
+          <p className="text-[#2dd4bf]">Resources and documentation for administrators</p>
         </div>
 
         <Tabs defaultValue="guides">
@@ -39,7 +39,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to create, edit, and manage user accounts, assign roles, and set permissions.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -59,7 +59,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to monitor project progress, assign consultants, and manage deployments.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -79,7 +79,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to configure AI assistants, set up prompts, and monitor performance.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -99,7 +99,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to set up pricing tiers, manage billing, and handle payments.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -184,7 +184,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         A comprehensive overview of the admin dashboard and its features.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -204,7 +204,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to manage projects, track progress, and handle deployments.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -224,7 +224,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         A guide to managing users, roles, and permissions in the platform.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -244,7 +244,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to set up and configure AI assistants for different tasks.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -276,7 +276,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Send an email to our support team and we'll get back to you as soon as possible.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -293,7 +293,7 @@ export default function AdminHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Schedule a video call with our support team to get help with complex issues.
                       </p>
                       <Button variant="link" className="px-0" asChild>

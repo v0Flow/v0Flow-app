@@ -19,7 +19,7 @@ export function CaseStudyCard({ title, description, days, tables, slug }: CaseSt
           <Logo className="h-12 w-12" />
           <div>
             <h3 className="text-2xl font-bold">{title}</h3>
-            <p className="text-muted-foreground">{description}</p>
+            <p className="text-[#2dd4bf]">{description}</p>
           </div>
         </div>
       </CardHeader>

@@ -30,7 +30,7 @@ export default function GetStartedPage() {
         <div className="container max-w-4xl">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold tracking-tight">Get Started with v0Flow Studio</h1>
-            <p className="mt-2 text-muted-foreground">Choose the option that best fits your current needs</p>
+            <p className="mt-2 text-[#2dd4bf]">Choose the option that best fits your current needs</p>
           </div>
 
           <Tabs value={activeTab} onValueChange={setActiveTab}>
@@ -52,7 +52,7 @@ export default function GetStartedPage() {
                     <div className="flex flex-col items-center text-center gap-4">
                       <Upload className="h-12 w-12 text-primary" />
                       <h3 className="text-xl font-bold">Quick Start</h3>
-                      <p className="text-muted-foreground max-w-md">
+                      <p className="text-[#2dd4bf] max-w-md">
                         Upload your v0.dev ZIP file and we'll automatically analyze it, generate a database schema, and
                         deploy your application.
                       </p>
@@ -98,7 +98,7 @@ export default function GetStartedPage() {
                     <div className="flex flex-col items-center text-center gap-4">
                       <MessageSquare className="h-12 w-12 text-primary" />
                       <h3 className="text-xl font-bold">Guided Approach</h3>
-                      <p className="text-muted-foreground max-w-md">
+                      <p className="text-[#2dd4bf] max-w-md">
                         Our consultants will help you define your project requirements, create a v0 prototype, and guide
                         you through the deployment process.
                       </p>
@@ -146,7 +146,7 @@ export default function GetStartedPage() {
                         <Check className="h-6 w-6 text-primary" />
                       </div>
                       <h3 className="text-xl font-bold">Create Your Account</h3>
-                      <p className="text-muted-foreground max-w-md">
+                      <p className="text-[#2dd4bf] max-w-md">
                         Sign up for a v0Flow Studio account to access all features and manage your projects.
                       </p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-md mt-2">
@@ -189,16 +189,16 @@ export default function GetStartedPage() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/terms" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </Link>
-            <Link href="/privacy" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/privacy" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Privacy
             </Link>
-            <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/contact" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Contact
             </Link>
           </div>

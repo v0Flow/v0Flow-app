@@ -62,7 +62,7 @@ export default function ConsultantCalendarPage() {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Calendar</h1>
-            <p className="text-muted-foreground">Manage your schedule and appointments</p>
+            <p className="text-[#2dd4bf]">Manage your schedule and appointments</p>
           </div>
           <div className="flex items-center gap-2">
             <Select value={view} onValueChange={setView}>
@@ -138,7 +138,7 @@ export default function ConsultantCalendarPage() {
                         <div className="flex items-center justify-between">
                           <div>
                             <h3 className="font-medium">{event.title}</h3>
-                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <div className="flex items-center gap-2 text-sm text-[#2dd4bf]">
                               <Clock className="h-3 w-3" />
                               <span>
                                 {event.startTime} - {event.endTime}
@@ -164,7 +164,7 @@ export default function ConsultantCalendarPage() {
                             <AvatarFallback>{event.client.charAt(0)}</AvatarFallback>
                           </Avatar>
                           <span className="text-sm">{event.client}</span>
-                          <span className="text-xs text-muted-foreground">({event.company})</span>
+                          <span className="text-xs text-[#2dd4bf]">({event.company})</span>
                         </div>
                         <div className="mt-2 flex gap-2">
                           <Button variant="outline" size="sm" className="h-8 w-8 p-0" asChild>\

@@ -271,7 +271,7 @@ CREATE TABLE users (
                     onChange={(e) => setGithubToken(e.target.value)}
                     placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"
                   />
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-[#2dd4bf]">
                     This token will be used to create a repository and push code. It will not be stored.
                   </p>
                 </div>
@@ -311,7 +311,7 @@ CREATE TABLE users (
                     onChange={(e) => setVercelToken(e.target.value)}
                     placeholder="vercel_token_xxxxxxxxxxxx"
                   />
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-[#2dd4bf]">
                     This token will be used to deploy your project to Vercel. It will not be stored.
                   </p>
                 </div>
@@ -331,7 +331,7 @@ NEXT_PUBLIC_API_URL=https://api.example.com
 JWT_SECRET=your_jwt_secret"
                     className="font-mono h-32"
                   />
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-[#2dd4bf]">
                     Enter environment variables in KEY=VALUE format, one per line.
                   </p>
                 </div>

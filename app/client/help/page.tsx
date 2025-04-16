@@ -12,7 +12,7 @@ export default function ClientHelpPage() {
       <div className="space-y-8">
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Help & Support</h1>
-          <p className="text-muted-foreground">Resources and documentation for clients</p>
+          <p className="text-[#2dd4bf]">Resources and documentation for clients</p>
         </div>
 
         <Tabs defaultValue="guides">
@@ -39,7 +39,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to upload your v0 ZIP file, describe your project, and start the deployment process.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -59,7 +59,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to track your project's progress, review deployments, and provide feedback.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -79,7 +79,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to book strategy sessions, communicate with consultants, and get the most out of your
                         collaboration.
                       </p>
@@ -100,7 +100,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to manage your billing information, make payments, and view invoices.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -185,7 +185,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to export your v0 prototype and upload it to v0Flow Studio.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -205,7 +205,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         A guide to monitoring your project's development stages in the client dashboard.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -225,7 +225,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Learn how to review your project and provide effective feedback.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -245,7 +245,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Tips for effective collaboration with our expert consultants.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -277,7 +277,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Send an email to our support team and we'll get back to you as soon as possible.
                       </p>
                       <Button variant="link" className="px-0" asChild>
@@ -294,7 +294,7 @@ export default function ClientHelpPage() {
                       </div>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-sm text-[#2dd4bf]">
                         Schedule a video call with our support team to get help with complex issues.
                       </p>
                       <Button variant="link" className="px-0" asChild>

@@ -9,7 +9,7 @@ export default function PrivacyPage() {
         <div className="container max-w-4xl">
           <div className="mb-8">
             <h1 className="text-3xl font-bold tracking-tight">Privacy Policy</h1>
-            <p className="mt-2 text-muted-foreground">Last updated: April 16, 2025</p>
+            <p className="mt-2 text-[#2dd4bf]">Last updated: April 16, 2025</p>
           </div>
 
           <div className="prose prose-gray dark:prose-invert max-w-none">
@@ -114,16 +114,16 @@ export default function PrivacyPage() {
       <footer className="border-t border-border/40 py-6">
         <div className="container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-2">
-            <p className="text-sm text-muted-foreground">© 2025 v0Flow Studio. All rights reserved.</p>
+            <p className="text-sm text-[#2dd4bf]">© 2025 v0Flow Studio. All rights reserved.</p>
           </div>
           <div className="flex gap-4">
-            <Link href="/terms" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/terms" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Terms
             </Link>
             <Link href="/privacy" className="text-sm text-primary hover:text-primary/80">
               Privacy
             </Link>
-            <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground">
+            <Link href="/contact" className="text-sm text-[#2dd4bf] hover:text-foreground">
               Contact
             </Link>
           </div>

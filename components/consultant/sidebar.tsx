@@ -71,7 +71,7 @@ export function ConsultantSidebar() {
           <Logo className="h-8 w-8" />
           <span className="text-xl font-semibold">
             v0Flow
-            <span className="ml-1 text-muted-foreground">Consultant</span>
+            <span className="ml-1 text-[#2dd4bf]">Consultant</span>
           </span>
         </Link>
       </SidebarHeader>
