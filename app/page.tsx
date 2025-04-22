@@ -1,3 +1,7 @@
+
+'use client'
+import { useRef, useState } from "react";
+
 import { Cpu, Clock, DollarSign, Upload, MessageSquare, CheckCircle } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { FileUpload } from "@/components/file-upload"
@@ -8,6 +12,42 @@ import { PricingCalculator } from "@/components/pricing-calculator"
 import { Testimonials } from "@/components/testimonials"
 import { ProjectCounter } from "@/components/project-counter"
 import Link from "next/link"
+
+
+const fileInputRef = useRef(null);
+const [uploadStatus, setUploadStatus] = useState("");
+
+const handleUpload = async (event) => {
+  event.preventDefault();
+  const file = fileInputRef.current?.files?.[0];
+  if (!file) {
+    setUploadStatus("Please select a file.");
+    return;
+  }
+
+  const formData = new FormData();
+  formData.append("file", file);
+
+  setUploadStatus("Uploading...");
+  try {
+    const res = await fetch("https://v0flow-agent.onrender.com/upload", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      setUploadStatus("Upload successful. Project is being processed.");
+      console.log("Server response:", data);
+    } else {
+      setUploadStatus("Upload failed: " + data.error);
+    }
+  } catch (error) {
+    console.error("Error uploading:", error);
+    setUploadStatus("Error during upload.");
+  }
+};
+
 
 export default function Home() {
   return (
